@@ -12,11 +12,10 @@ services:
             - ./laravel-root/public:/var/www/app/public
             - ./nginx/site.conf:/etc/nginx/conf.d/default.conf
 
-
-    php:
-        image: php
+    lar-node:
         build: ./php/.
         volumes:
+#            - ./common-cpa-pkg:/var/www/packages/
             - ./laravel-root:/var/www/app
             - ./laravel-root/public:/var/www/app/public
         networks:
