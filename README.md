@@ -1,4 +1,4 @@
-#### Docker-Laravel-node Starter Kit  
+#### Docker Laravel Node Starter Kit  
 
 ##### Use  
  * Step One
