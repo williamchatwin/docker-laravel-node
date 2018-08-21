@@ -15,12 +15,11 @@ services:
     lar-node:
         build: ./php/.
         volumes:
-#            - ./common-cpa-pkg:/var/www/packages/
+            # - ./common-cpa-pkg:/var/www/packages/common-cpa-pkg
             - ./laravel-root:/var/www/app
             - ./laravel-root/public:/var/www/app/public
         networks:
             - php-network
-
 
     mysql:
         image: mysql:5.7
